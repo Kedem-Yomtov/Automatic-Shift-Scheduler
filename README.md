@@ -50,9 +50,55 @@ Shift.java - Represents a single shift, including worker assignment.
 
 Worker.java - Represents an individual worker with preferences and restrictions.
 
+Schedule.java - Represents the entire Schedule, built of cubes for each grouped shift
+
+Restrition.java - represents a restriction belonging to a worker
+
 Usage
 
 Customize worker and shift data in the source files, then run the project to generate optimized schedules. You can adjust the restrictions and preferences as needed.
+
+Schedule File Format
+
+The schedule file defines the structure of shifts for each day and the roles needed. It follows this format:
+[Schedule Name]
+[Role 1] [Role 2] [Role 3] ...
+Cube:
+[Cube Number] [Start Time] [End Time]
+[Role] [Start Time] [End Time]
+[Role] [Start Time] [End Time]
+...
+
+Example:
+Bar
+bartender kitchen waitress
+Cube:
+1 1745 0200
+Bartender 1745 0200
+Kitchen 1830 0100
+Waitress 2000 0200
+Cube:
+2 1745 0200
+Bartender 1745 0200
+Kitchen 1830 0100
+Waitress 2000 0200
+
+Shift File Format:
+[Worker Name]
+[Roles]
+[r or p] [Restriction Type] [Restriction Weight] [Variables]
+
+Example:
+Ked
+Bartender
+r daysOfWeek 0 2 3 5 7
+r workDays 0 1 2
+
+Barb
+waitress Bartender kitchen
+p workDays 0 1 1
+r daysOfWeek 0 2 3 4 5 7
+
 
 Troubleshooting
 
