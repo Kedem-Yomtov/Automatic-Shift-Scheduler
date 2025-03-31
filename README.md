@@ -4,20 +4,16 @@ This project is a shift scheduling optimization tool designed to assign workers 
 
 Features
 
-Recursive depth-first search algorithm to find optimal shift assignments.
+Efficient scheduling algorithm with customizable constraints
 
-Supports worker restrictions, such as:
-  Maximum workdays
-  Back-to-back shift limitations
-  Day-of-week restrictions
-  Shift type preferences
-  Incompatible pairings
+Uses JavaFX for a graphical user interface
 
-Automatic placeholder handling for missing workers without altering their assignment.
+Automatically generates a visual representation of the schedule as an image
 
-Randomized worker selection to ensure variability.
+Supports various worker restrictions and shift types
 
-Detailed debugging output to track the scheduling process.
+Recursive depth-first search to find optimal scheduling solutions
+
 
 Getting Started
 
@@ -31,7 +27,7 @@ Installation
 
 Clone the repository:
 
-git clone https://github.com/username/shift-scheduling.git
+git clone https://github.com/Kedem-Yomtov/Automatic-Shift-Scheduler.git
 cd shift-scheduling
 
 Open the project in Eclipse.
