@@ -1,0 +1,44 @@
+Kedem
+Bartender
+r daysOfWeek 0 7
+p workDays 0 1 2
+r workDays 0 1 2
+p nobackToBack 0
+r either 0 5 7
+
+Ayelet
+waitress Bartender kitchen
+p workDays 0 4 5
+r workDays 0 1 5
+r daysOfWeek 0 1
+p shifttype 0 kitchen
+
+Matar
+waitress
+r daysOfWeek 0 2 3 4 5 7
+
+Ruti
+waitress bartender
+R daysOfWeek 0 1 2 3 5
+R workDays 0 0 2
+
+Rut
+waitress Bartender
+r daysOfWeek 0 2 4 5
+p workDays 0 3 3
+
+Roni
+waitress Bartender
+r daysOfWeek 0 1 2 3
+r workDays 1 1 3
+p workDays 0 3 3
+p shifttype 0 bartender
+
+Shirel
+kitchen
+r workDays 0 1 4
+p workDays 0 3 4
+p daysOfWeek 0 4 5
+
+Yehuda
+kitchen
