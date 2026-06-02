@@ -1,4 +1,4 @@
-# Shift Scheduling Optimization
+# Automatic Shift Scheduler
 
 This project is a shift scheduling optimization tool designed to assign workers to shifts based on a variety of constraints. The goal is to create an efficient schedule while respecting worker preferences and availability. The advantage of the program is that it enables the owner of the business to easily generate shifts while keeping as many of the workers preferences as possible.
 
@@ -36,7 +36,7 @@ cd shift-scheduling
 
 ## Running the Project
 
-To run the scheduling algorithm, execute the `Main.java` class in Eclipse. The program will print debug information and the final scheduling output to the console.
+To run the scheduling algorithm, execute the `Main.java` class in Eclipse. The program will print debug information and the final scheduling output to the JavaFX Interface.
 
 ---
 
